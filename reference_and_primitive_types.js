@@ -6,9 +6,17 @@
 //Reference type: objects and arrays are reference types, bellow example:
 
 const person = { name: 'max'};
-const secondPerson = person;
+
+// const secondPerson = person;
+//if want to assign the original object to secondPerson, use spread operator
+//same with array!!!
+const secondPerson = {...person};
+
 person.name = 'rose';
 console.log(secondPerson);
+
+
+
 
 
 /*
