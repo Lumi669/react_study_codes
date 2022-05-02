@@ -1,16 +1,9 @@
-// destructuring has two types
-//1. array destructuring
+const numbers = [1, 2, 3];
 
-const [a, b] = ['rose', 'ben'];
-console.log(a, b);
+//pulling out 1 and 2 from array numbers, but not 3
+[num1, num2] = numbers;
+console.log(num2, num1);
 
-//2. object destructuring
-const {age, nam} = {nam: 'rose', age: 90};
-console.log(nam);
-console.log(age);
-
-
-/*
-Spread operator is to get all the elements or properties, 
-	Destructuring is to get single elements or properties and store them in variables for arrays and objects
-*/
+//pulling out 1 and 3 from array, leave 2 out
+[num1, , num3] = numbers;
+console.log(num1, num3);
