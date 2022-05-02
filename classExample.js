@@ -1,26 +1,20 @@
 //create a second class
 class Human {
-    constructor(){
-        this.gender = 'male';
-    }
+   
+    gener = 'male';  
 
-    printGender(){
+    printGender = () => {
         console.log(this.gender);
     }
 }
 
 //create a class
 class Person extends Human{
-    //use contructor function to set up properties
-    constructor(){  
-        //execute parent constructor
-        super();
-        //use keyword this to set up properties
-        this.name = 'Max';   
-        this.gender = 'female';    
-    }
+    
+        name = 'Max';   
+        gender = 'female';    
 
-    printMyName(){
+    printMyName = () => {
         console.log(this.name);
     }
 }
@@ -32,19 +26,10 @@ person.printMyName();
 person.printGender();
 
 
-
-
-
-
 /*
 Note: 
-1. constructor is default function used to set properties of a class, it can be executed when instantiate the class. 
-2. inside constructor, use `this` keyword to set up properties
-
-3. we can use class in store an instance in a constant with a new person and then we can execute person.p.rintMyName()
-
-4. we can let Person inherit Human
- - use keyword extends
- - in Person constructuor, add super() to execute parent constructor
-
+for next generation class, 
+1. not use constructor to set upn properties, 
+2. not use super() when extends
+2. use property like to attach methods, use arrow function
 */
