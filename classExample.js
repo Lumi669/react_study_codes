@@ -16,7 +16,8 @@ class Person extends Human{
         //execute parent constructor
         super();
         //use keyword this to set up properties
-        this.name = 'Max';       
+        this.name = 'Max';   
+        this.gender = 'female';    
     }
 
     printMyName(){
